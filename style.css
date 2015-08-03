@@ -1,0 +1,154 @@
+/*
+ Theme Name: HFU Responsive
+ Theme URI: http://www.nio-av.de
+ Description: Responsives Layout für die HFU
+ Author: Nicolas Tribukait
+ Version: 0.1
+ Author URL: http://www.nio-av.de
+ */
+
+#HFU-Logo {
+    min-width: 150px;
+    width: 20%;
+    mx-width: 300px;
+    float: right;
+    margin: 20px;
+    margin-top: -40px;
+}
+
+body, html{
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+@media(max-width: 800px) {
+    #HFU-Logo {
+        display: none;
+    }
+    #circle {
+        display: none;
+    }
+    #vertical-center {
+        margin-top: auto !important;
+    }
+    nav h1 {
+        font-size: 1.21em;
+    }
+}
+
+@media(min-width: 800px) {
+    #HFU-Logo-White {
+        display: none;
+    }
+}
+
+#HFU-Logo-White {
+    width: 90px;
+    float: right;
+    margin-right: 20px;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#circle {
+    background-color: #83B81A;
+    border-radius: 100%;
+    width: 1900px;
+    height: 1900px;
+    margin-top: -1850px;
+    margin-left: -900px;
+}
+
+article {
+    margin: 20px;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+#vertical-center {
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(254, 254, 254, 0.7);
+    box-shadow: 1px 1px 4px #191919;
+    margin-top: 50px;
+    
+}
+
+button {
+    background-color: #83B81A;
+    padding: 5px 40px;
+    color: white;
+    border: medium none;
+    font-weight: bold;
+    margin: 20px 0px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+@media(max-width: 500px) {
+    button {
+        width: 100%;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    padding-top: 20px;
+    color: #707173;
+}
+
+nav {
+    background-color: #83B81A;
+    float: left;
+    width: 100%;
+    color: #FFF;
+}
+
+nav h1 {
+    margin: 20px;
+    display: inline;
+    color: #FFF;
+}
+
+#headernav {
+    margin-bottom: 30px;
+    padding: 20px 0px;
+}
+
+nav ul{
+    padding: 4px; 0px;
+}
+a {
+    color: #00840A;
+    text-decoration: none;
+}
+nav a{
+    color: #FFF;
+}
+
+nav li {
+    display: inline;
+    padding-left: 15px;
+    margin-left: 0px;
+}
+@media(max-width: 1250px) {
+    #claim{
+        display: none;
+    }
+}
+@media(min-width: 1250px) {
+    #claim {
+        position: absolute;
+        right: -220px;
+        bottom: -50px;
+        width: 200px;
+        opacity: 0.2;
+        margin-bottom: 100px;
+    }
+}
